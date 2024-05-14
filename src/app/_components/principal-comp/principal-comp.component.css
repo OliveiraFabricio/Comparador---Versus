@@ -1,5 +1,5 @@
 /*Estilização do Container*/
-.heroContainer{
+.heroContainer  {
   align-items: flex-start;
   color: #fff;
   display: flex;
@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-.heroContainer .heroContent .titleContainer{
+.heroContainer .heroContent .titleContainer {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -29,26 +29,26 @@
   width: 90%;
 }
 /* Título */
-.heroContainer .heroContent .title{
+.heroContainer .heroContent .title {
   margin-right: 10px;
 }
 
-.heroContainer .heroContent .title2{
+.heroContainer .heroContent .title2 {
   margin-left: 21px;
 }
 
-.heroContainer .heroContent .title2, .heroContainer .heroContent .title{
+.heroContainer .heroContent .title2, .heroContainer .heroContent .title {
   font-size: 6rem;
   letter-spacing: -4px;
   max-width: 90%;
   position: relative;
   text-transform: lowercase;
   z-index: 2;
-
+  font-weight: bold;
 }
 
 /* Subtitulo */
-.heroContainer .heroContent .subTitle{
+.heroContainer .heroContent .subTitle {
   color: #fff;
   display: block;
   font-size: 1.5em;
@@ -59,10 +59,106 @@
   text-align: center;
 }
 
+.heroContainer .heroContent .title2.span_title::after {
+  background: transparent linear-gradient(92deg, #3c59fc, #7600e0) 0 0 no-repeat padding-box;
+  bottom: 15px;
+  content: "";
+  height: 10px;
+  position: absolute;
+  right: -10px;
+  width: calc(100% + 12px);
+  z-index: -1;
+}
+
 .heroContainer .heroContent .subTitle a {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+/* Estilização do campo de busca */
+.heroContainer .heroContent .inputContainer {
+  margin: 0 auto 2em;
+  max-width: 600px;
+  position: relative;
+  width: 90%;
+  z-index: 2;
+}
+
+.search_Search.search_Home {
+  margin-top: 0%;
+}
+
+.search_Search{
+  margin: 3em auto 0;
+  max-width: 900px;
+  width: 100%;
+}
+
+.search_Search.search_Home  .searchInputWrapper {
+  margin-left: 22px;
+  width: calc(100% - 30px);
+}
+
+.search_Search .searchInputWrapper {
+  display: flex;
+  height: 40px;
+  margin-right: 8px;
+  position: relative;
+}
+
+.search_Search *{
+  box-sizing: border-box;
+}
+
+.search_Search.search_Home .searchInputWrapper input {
+  background: #fff;
+  border-radius: 9999px;
+  color: #161616;
+  height: 90%;
+  padding-left: 1em;
+}
+
+.search_Search .searchInputWrapper input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: .5em 40px .5em 0;
+  width: 100%;
+}
+
+.Suggestions_suggestions.Suggestions_home {
+  background-color: #fff;
+  color: #161616;
+  top: 90%;
+}
+
+.Suggestions_suggestions {
+  background-color: #161616;
+  border: 1px solid #e6e6e6;
+  border-radius: 0 0 .5rem .5rem;
+  border-top: none;
+  color: #fff;
+  margin: 0;
+  padding: 0 10px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.search_Search.search_Home .searchInputWrapper .compare_btn {
+  padding-left: 3em;
+  font-weight: bold;
+  align-self: auto;
+  background-color: #161616;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  margin-left: .5em;
+  width: 36%;
+}
+
+.search_Search .searchInputWrapper .compare_btn.landing_btn {
+  box-shadow: 0 0 10px 0 hsla(0, 0%, 97%, .7);
 }
 
 /* Estilização das imagens da parte inferior*/
@@ -77,4 +173,33 @@
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+/* Estilização do botão (seta) da parte inferior*/
+.heroContainer .hero_button {
+  align-items: center;
+  bottom: 90px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: center;
+  left: calc(50% - 22px);
+  position: absolute;
+  width: 40px;
+  z-index: 1;
+}
+
+.heroContainer .arrow_button {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: animation_arrow;
+}
+
+.heroContainer .arrow_button svg {
+  fill: #3c59fc;
+}
+
+.VsIcon svg {
+  height: inherit;
+  width: inherit;
 }
