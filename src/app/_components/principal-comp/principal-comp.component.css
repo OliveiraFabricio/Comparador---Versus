@@ -1,0 +1,80 @@
+/*Estilização do Container*/
+.heroContainer{
+  align-items: flex-start;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 96vh;
+  max-height: 820px;
+  padding-top: 60px;
+  position: relative;
+  width: 100%;
+}
+.heroContainer .heroContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: -2px;
+  width: 100%;
+}
+
+.heroContainer .heroContent .titleContainer{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 90%;
+}
+/* Título */
+.heroContainer .heroContent .title{
+  margin-right: 10px;
+}
+
+.heroContainer .heroContent .title2{
+  margin-left: 21px;
+}
+
+.heroContainer .heroContent .title2, .heroContainer .heroContent .title{
+  font-size: 6rem;
+  letter-spacing: -4px;
+  max-width: 90%;
+  position: relative;
+  text-transform: lowercase;
+  z-index: 2;
+
+}
+
+/* Subtitulo */
+.heroContainer .heroContent .subTitle{
+  color: #fff;
+  display: block;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 3em;
+  margin-top: -1%;
+  padding: 0 10%;
+  text-align: center;
+}
+
+.heroContainer .heroContent .subTitle a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilização das imagens da parte inferior*/
+.rodape.curva {
+  opacity: .2;
+}
+
+.curva {
+  bottom: -1px;
+  height: 90px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
