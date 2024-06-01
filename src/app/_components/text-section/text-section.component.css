@@ -84,8 +84,14 @@
   z-index: 2;
 }
 
+
+
 .search_Search.search_Home {
   margin-top: 0%;
+}
+
+.search_Search *{
+  box-sizing: border-box;
 }
 
 .search_Search{
@@ -100,7 +106,7 @@
 }
 
 .search_Search .searchInputWrapper {
-  display: flex;
+
   height: 40px;
   margin-right: 8px;
   position: relative;
@@ -109,6 +115,7 @@
 .search_Search *{
   box-sizing: border-box;
 }
+
 
 .search_Search.search_Home .searchInputWrapper input {
   background: #fff;
@@ -162,11 +169,11 @@
 }
 
 /* Estilização das imagens da parte inferior*/
-.rodape.curva {
+.footer.curve {
   opacity: .2;
 }
 
-.curva {
+.curve {
   bottom: -1px;
   height: 90px;
   left: 0;
