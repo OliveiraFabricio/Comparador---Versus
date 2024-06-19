@@ -1,0 +1,26 @@
+.search-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.search-input {
+ border-radius: 999px;
+ padding-left: 1em;
+ width: 300%;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}

@@ -8,18 +8,20 @@ import { InputSectionComponent } from './_components/input-section/input-section
 import { TextSectionComponent } from './_components/text-section/text-section.component';
 import { NavBarModule } from './_components/navbar/navbar.module';
 import { TextSectionModule } from './_components/text-section/text-section.module';
+import { InputSectionModule } from './_components/input-section/input-section/input-section.module';
 
 // Todo: adiciona módulo para cada componente
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent,
-    TextSectionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NavBarModule,
+    TextSectionModule,
+    InputSectionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

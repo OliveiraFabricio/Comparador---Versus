@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { TextSectionComponent } from ' ';
+import { InputSectionComponent } from './input-section.component';
 
 @NgModule({
-  declarations: [NavbarComponent],
-  exports: [NavbarComponent],
+  declarations: [InputSectionComponent],
+  exports: [InputSectionComponent],
   imports: [CommonModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class NavBarModule {}
+export class InputSectionModule {}
